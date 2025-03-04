@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROДетали</title>
+    <link rel="stylesheet" href="./src/css/normalize.css"></link>
+    <link rel="stylesheet" href=".//src/css/style.css"></link>
+    <link href="https://myfonts.ru/myfonts?fonts=bookman-old-style" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
@@ -11,12 +14,9 @@
         <div class="header__content-left">
           <img
             class="header__logo"
-            src="public/MainLogo"
+            src="svg/logo_and_text.svg"
             alt="Main logo here"
           />
-          <p class="header__title">
-            <span class="highlighted">PRO</span> detali
-          </p>
         </div>
         <div class="header__content-right">
           <nav class="header__navigation navigation">
@@ -41,13 +41,17 @@
               </li>
             </ul>
           </nav>
-          <img class="header__icon" src="public/Profile" alt="Profile" />
+          <img class="header__icon" src="./svg/icon_profile.svg" alt="Profile" />
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero__title"><span class="highlighted">PRO</span> Детали</h1>
+        <img
+          src="./svg/logoNameText.svg" 
+          alt="PRO Детали"
+          class = "hero__title"
+        />
         <p class="hero__text">
           Платформа, где заказчики находят исполнителей, а исполнители – новые
           возможности!
@@ -55,6 +59,11 @@
         <a class="hero__link" href="registration.html"
           >Присоединяйтесь сейчас</a
         >
+        <img
+          class="hero__backgroung-img"
+          alt="background"
+          src="./public/hero_background.png"
+        />
       </section>
 
       <section class="activities">
@@ -153,7 +162,7 @@
           <!--  repeatable -->
           <div class="rating__container">
             <div class="rating__content-left">
-              <img src="" alt="" class="rating__icon" />
+              <img class="rating__img-profile" alt="" src="./svg/icon_profile.svg">
               <div class="rating__description">
                 <p class="rating__name">MetalCraft Pro</p>
                 <p class="rating__text">
@@ -162,13 +171,13 @@
               </div>
             </div>
             <div class="rating__content-right">
-              <img src="" alt="" class="rating__stars" />
+              <img src="./svg/five_stars_rating.svg" alt="" class="rating__stars" />
               <p class="rating__text">(500 отзывов)</p>
             </div>
           </div>
           <div class="rating__container">
             <div class="rating__content-left">
-              <img src="" alt="" class="rating__icon" />
+              <img class="rating__img-profile" alt="" src="./svg/icon_profile.svg">
               <div class="rating__description">
                 <p class="rating__name">MetalCraft Pro</p>
                 <p class="rating__text">
@@ -177,13 +186,13 @@
               </div>
             </div>
             <div class="rating__content-right">
-              <img src="" alt="" class="rating__stars" />
+              <img src="./svg/four_stars_rating.svg" alt="" class="rating__stars" />
               <p class="rating__text">(500 отзывов)</p>
             </div>
           </div>
           <div class="rating__container">
             <div class="rating__content-left">
-              <img src="" alt="" class="rating__icon" />
+              <img class="rating__img-profile" alt="" src="./svg/icon_profile.svg">
               <div class="rating__description">
                 <p class="rating__name">MetalCraft Pro</p>
                 <p class="rating__text">
@@ -192,13 +201,13 @@
               </div>
             </div>
             <div class="rating__content-right">
-              <img src="" alt="" class="rating__stars" />
+              <img src="./svg/three_stars_rating.svg" alt="" class="rating__stars" />
               <p class="rating__text">(500 отзывов)</p>
             </div>
           </div>
           <div class="rating__container">
             <div class="rating__content-left">
-              <img src="" alt="" class="rating__icon" />
+              <img class="rating__img-profile" alt="" src="./svg/icon_profile.svg">
               <div class="rating__description">
                 <p class="rating__name">MetalCraft Pro</p>
                 <p class="rating__text">
@@ -207,13 +216,13 @@
               </div>
             </div>
             <div class="rating__content-right">
-              <img src="" alt="" class="rating__stars" />
+              <img src="./svg/two_stars_rating.svg" alt="" class="rating__stars" />
               <p class="rating__text">(500 отзывов)</p>
             </div>
           </div>
           <div class="rating__container">
             <div class="rating__content-left">
-              <img src="" alt="" class="rating__icon" />
+              <img class="rating__img-profile" alt="" src="./svg/icon_profile.svg">
               <div class="rating__description">
                 <p class="rating__name">MetalCraft Pro</p>
                 <p class="rating__text">
@@ -222,7 +231,7 @@
               </div>
             </div>
             <div class="rating__content-right">
-              <img src="" alt="" class="rating__stars" />
+              <img src="./svg/one_star_rating.svg" alt="" class="rating__stars" />
               <p class="rating__text">(500 отзывов)</p>
             </div>
           </div>
@@ -236,7 +245,7 @@
           <!-- repeatable -->
           <div class="requests__container">
             <div class="requests__content-left">
-              <img src="" alt="" class="requests__image" /><a
+              <img src="./public/actual_img_profile.png" alt="" class="requests__image" /><a
                 href=""
                 class="requests__order-link"
                 >Подробнее</a
@@ -256,7 +265,7 @@
           </div>
           <div class="requests__container">
             <div class="requests__content-left">
-              <img src="" alt="" class="requests__image" /><a
+              <img src="./public/actual_img_profile.png" alt="" class="requests__image" /><a
                 href=""
                 class="requests__order-link"
                 >Подробнее</a
@@ -276,7 +285,7 @@
           </div>
           <div class="requests__container">
             <div class="requests__content-left">
-              <img src="" alt="" class="requests__image" /><a
+              <img src="./public/actual_img_profile.png" alt="" class="requests__image" /><a
                 href=""
                 class="requests__order-link"
                 >Подробнее</a
@@ -296,7 +305,7 @@
           </div>
           <div class="requests__container">
             <div class="requests__content-left">
-              <img src="" alt="" class="requests__image" /><a
+              <img src="./public/actual_img_profile.png" alt="" class="requests__image" /><a
                 href=""
                 class="requests__order-link"
                 >Подробнее</a
@@ -334,6 +343,7 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
+          <img src="./svg/line__deatils.svg" alt="line" class="faq__line">
           <details class="faq__details">
             <summary class="faq__summary">
               Металлообработка - это важный процесс, который играет ключевую
@@ -346,6 +356,7 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
+          <img src="./svg/line__deatils.svg" alt="line" class="faq__line">
           <details class="faq__details">
             <summary class="faq__summary">
               Металлообработка - это важный процесс, который играет ключевую
@@ -358,6 +369,7 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
+          <img src="./svg/line__deatils.svg" alt="line" class="faq__line">
           <details class="faq__details">
             <summary class="faq__summary">
               Металлообработка - это важный процесс, который играет ключевую
@@ -370,6 +382,7 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
+          <img src="./svg/line__deatils.svg" alt="line" class="faq__line">
           <details class="faq__details">
             <summary class="faq__summary">
               Металлообработка - это важный процесс, который играет ключевую
@@ -382,16 +395,14 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
+          <img src="./svg/line__deatils.svg" alt="line" class="faq__line">
         </div>
       </section>
     </main>
     <footer>
       <div class="footer__wrapper">
         <div class="footer__block">
-          <img src="" alt="" class="footer__logo" />
-          <p class="footer__title">
-            <span class="highlighted">PRO</span> Детали
-          </p>
+          <img src="./svg/logo_and_text__footer.svg" alt="" class="footer__logo" />
         </div>
         <div class="footer__block">
           <h3 class="footer__block-title">Компания</h3>
@@ -420,12 +431,13 @@
           </ul>
         </div>
         <div class="footer__block">
-          <a href="tel:+79999999999" class="footer__link">+7 999 999 99 99</a>
-          <a href="mailto:name@gmail.com" class="footer__link"
+          <a href="tel:+79999999999" class="footer__link_tel">+7 999 999 99 99</a>
+          <a href="mailto:name@gmail.com" class="footer__link_email"
             >name@gmail.com</a
           >
         </div>
       </div>
+      <img src="./svg/line_footer.svg" alt="line" class="footer__line">
       <p class="footer__extra">
         Сервис "PRO Детали" - Металлообработка - это важный процесс, который
         играет ключевую роль в промышленности. Она включает в себя различные
