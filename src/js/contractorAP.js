@@ -8,40 +8,40 @@ requestsSection = document.querySelector(".requests");
 
 let profileState = 1;
 let servicesState = 0;
-servicesSection.display = "none";
+servicesSection.style.display = "none";
 let requestsState = 0;
-requestsSection.display = "none";
+requestsSection.style.display = "none";
 
 function profileToggle() {
   if (profileState === 0) {
     profileState = 1;
-    profileSection.display = "flex";
+    profileSection.style.display = "flex";
     servicesState = 0;
-    servicesSection.display = "none";
+    servicesSection.style.display = "none";
     requestsState = 0;
-    requestsSection.display = "none";
+    requestsSection.style.display = "none";
   }
 }
 
 function servicesToggle() {
   if (servicesState === 0) {
     profileState = 0;
-    profileSection.display = "none";
+    profileSection.style.display = "none";
     servicesState = 1;
-    servicesSection.display = "flex";
+    servicesSection.style.display = "flex";
     requestsState = 0;
-    requestsSection.display = "none";
+    requestsSection.style.display = "none";
   }
 }
 
 function requestsToggle() {
   if (requestsState === 0) {
     profileState = 0;
-    profileSection.display = "none";
+    profileSection.style.display = "none";
     servicesState = 0;
-    servicesSection.display = "none";
+    servicesSection.style.display = "none";
     requestsState = 1;
-    requestsSection.display = "flex";
+    requestsSection.style.display = "flex";
   }
 }
 
