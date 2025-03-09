@@ -6,11 +6,14 @@
     <title>PROДетали</title>
     <link rel="stylesheet" href="./src/css/normalize.css" />
     <link rel="stylesheet" href=".//src/css/style.css" />
+    <link rel="stylesheet" href=".//src/css/style_modal.css" />
     <link
       href="https://myfonts.ru/myfonts?fonts=bookman-old-style"
       rel="stylesheet"
       type="text/css"
     />
+    <script src="js/modalEntryRegist.js" defer></script>
+    <script src="js/LK_entry_href.js" defer></script>
   </head>
   <body>
     <header>
@@ -391,7 +394,7 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
-          <img src="./public/line__deatils.svg" alt="line" class="faq__line" />
+          <div class="faq__line"></div>
           <details class="faq__details">
             <summary class="faq__summary">
               Металлообработка - это важный процесс, который играет ключевую
@@ -404,7 +407,7 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
-          <img src="./public/line__deatils.svg" alt="line" class="faq__line" />
+          <div class="faq__line"></div>
           <details class="faq__details">
             <summary class="faq__summary">
               Металлообработка - это важный процесс, который играет ключевую
@@ -417,7 +420,7 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
-          <img src="./public/line__deatils.svg" alt="line" class="faq__line" />
+          <div class="faq__line"></div>
           <details class="faq__details">
             <summary class="faq__summary">
               Металлообработка - это важный процесс, который играет ключевую
@@ -430,7 +433,7 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
-          <img src="./public/line__deatils.svg" alt="line" class="faq__line" />
+          <div class="faq__line"></div>
           <details class="faq__details">
             <summary class="faq__summary">
               Металлообработка - это важный процесс, который играет ключевую
@@ -443,7 +446,7 @@
               inventore quod nesciunt eaque quas.
             </p>
           </details>
-          <img src="./public/line__deatils.svg" alt="line" class="faq__line" />
+          <div class="faq__line"></div>
         </div>
       </section>
     </main>
@@ -506,7 +509,7 @@
     </footer>
 
     <dialog class="authorization">
-      <h2><span class="authorization__title">Вход /</span> Регистрация</h2>
+      <h2>Вход</h2>
       <form class="authorization__form" method="dialog">
         <input placeholder="E-mail" class="authorization__form-input" type="email" name="email" required>
         <input placeholder="Пароль" class="authorization__form-input" type="password" id="password" name="password"
@@ -517,12 +520,14 @@
         </div>
         <button class="authorization__authorizate" type="submit">Войти</button>
       </form>
-      <button>Забыли пароль?</button>
-      <button class="authorization__registration">Регистрация</button>
+      <div class="authorization__buttons">
+        <button>Забыли пароль?</button>
+        <button class="authorization__registration">Регистрация</button>
+      </div>
     </dialog>
 
     <dialog class="registration">
-      <h2><span class="registration__title">Регистрация /</span> Вход</h2>
+      <h2>Регистрация</h2>
       <form class="registration__form" method="dialog">
         <input placeholder="Введите имя" class="registration__form-input" type="text" name="name" required>
         <input placeholder="Введите E-mail" class="registration__form-input" type="email" name="email" required>
@@ -531,18 +536,18 @@
         <input placeholder="Повторите пароль" class="registration__form-input" type="password" id="password-repeat"
           name="password" required minlength="6">
         </div>
-        <div>
-          <div>
+        <div class="registration__choose_role">
+          <div class="role__performer">
             <input type="radio" name="performer-customer">
             Хочу стать исполнителем
           </div>
-          <div>
+          <div class="role__customer">
             <input type="radio" name="performer-customer">
             Хочу стать заказчиком
           </div>
         </div>
-        <p>Нажимая на кнопку "Зарегистрироваться" вы принимаете условия
-          <a href="#">Пользовательского соглашения</a>
+        <p class="registration__text">Нажимая на кнопку "Зарегистрироваться" вы принимаете условия
+          <a href="#" class="registration__text_link">Пользовательского соглашения</a>
         </p>
         <button class="registration__registrate" type="submit">Зарегистрироваться</button>
       </form>
@@ -553,7 +558,7 @@
       <form class="code__form">
         <button class="code__back-btn">←</button>
         <h2>Введите код</h2>
-        <p>Мы отправили код вам на указанную почту. Введите его, чтобы войти</p>
+        <p class="code__desc">Мы отправили код вам на указанную почту. Введите его, чтобы войти</p>
         <div class="code-inputs">
             <input type="text" maxlength="1" class="code__code"/>
             <input type="text" maxlength="1" class="code__code"/>
@@ -566,7 +571,5 @@
         </div>
       </form>
     </dialog>
-
-    <script src="js/index.js"></script>
   </body>
 </html>
