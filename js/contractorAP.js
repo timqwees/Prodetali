@@ -49,3 +49,8 @@ profileButton.addEventListener("click", profileToggle);
 servicesButton.addEventListener("click", servicesToggle);
 requestsButton.addEventListener("click", requestsToggle);
 
+const imgLK = document.querySelector(".header__logo");
+
+imgLK.addEventListener('click', function() {
+    window.location.href = 'index.html';
+}) 
