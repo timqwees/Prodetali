@@ -593,7 +593,7 @@ if (!isset($sensor) || $sensor === null || !($sensor == $sessionId)) {
               </div><!-- end bloctime -->
 
               <h1 style="margin-top: 1.5rem;font-family: 'SB Sans Display';font-weight: 600;font-size: 20px">
-                TimQwees 》<font style="font-weight: 500;">Регистрация профиля [мероприятия]</font>
+                TimQwees 》<font style="font-weight: 500;">Регистрация профиля [Металлообработки]</font>
               </h1>
             </div>
             <div class="information">
