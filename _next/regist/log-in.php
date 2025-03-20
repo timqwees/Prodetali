@@ -49,13 +49,13 @@ if (time() - $time_start > 5) {
   <meta property="og:site" content="https://envtimqwees.ru/" /> <!-- website link -->
   <meta property="og:title" content="TimQwees - авторизация профиля" />
   <!-- title shown in the actual shared post -->
-  <meta property="og:description" content="TimQwees - Металлургия" />
+  <meta property="og:description" content="TimQwees - Металлообработки" />
   <!-- description shown in the actual shared post -->
   <meta property="og:image" content="images/logo.svg" /> <!-- image link, make sure it's jpg -->
-  <meta property="og:url" content="https://vk.com/moscowtimqwees/" /> <!-- where do you want your post to link to -->
+  <meta property="og:url" content="https://vk.com/MX999AM99/" /> <!-- where do you want your post to link to -->
   <meta property="og:type" content="article" />
   <!-- Website Title -->
-  <title>Авторизация - TimQwees [Металлургия]</title>
+  <title>Авторизация - TimQwees [Металлообработки]</title>
 
   <!-- Styles -->
   <link crossorigin id="pagestyle" href="../assets/css/argon-dashboard.css?v=2.0.4" rel="preload stylesheet" as="style">

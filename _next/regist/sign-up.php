@@ -340,15 +340,15 @@ if (!isset($sensor) || $sensor === null || !($sensor == $sessionId)) {
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="TimQwees -  Регистрация [Мероприятия]">
+  <meta name="description" content="TimQwees -  Регистрация [Металлообработки]">
   <meta name="author" content="TimQwees">
 
   <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-  <meta property="og:site_name" content="Event MoscowPolytech" /> <!-- website name -->
+  <meta property="og:site_name" content="Металлообработки - REGISTRATION" /> <!-- website name -->
   <meta property="og:site" content="" /> <!-- website link -->
-  <meta property="og:title" content="Регистрация - TimQwees [Металлургия]" />
+  <meta property="og:title" content="Регистрация - TimQwees [Металлообработки]" />
   <!-- title shown in the actual shared post -->
-  <meta property="og:description" content="Металлургия - регистрация" />
+  <meta property="og:description" content="Металлообработки - регистрация" />
   <!-- description shown in the actual shared post -->
   <meta property="og:image" content="/../images/logo.png" />
   <!-- image link, make sure it's jpg -->
@@ -356,7 +356,7 @@ if (!isset($sensor) || $sensor === null || !($sensor == $sessionId)) {
   <meta property="og:type" content="article" />
 
   <!-- Website Title -->
-  <title>TimQwees [Металлургия] - Регистрация</title>
+  <title>TimQwees [Металлообработки] - Регистрация</title>
 
   <script defer async src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
