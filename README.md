@@ -1,6 +1,6 @@
 ## Prodetali - PRO детали
 Задачи:
-1. Разбить style.css на два: header + footer и index.html
+🛠️ 1. Разбить style.css на два: header + footer и index.html
    
 [![Tim](https://img.shields.io/github/forks/onwidget/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://t.me/timqwees)
 
@@ -16,7 +16,7 @@
 │   ├── sign-up.php (main)
 ```
 
-## Result REG / AUTH
+## 🌙 Result REG / AUTH
 
 <div stye="display: flex">
 <img width="400px" src="https://s.iimg.su/s/20/WcCqcATh2v1mRyjD2M1aGr0o6l2Clr2PKOeang2t.png">
