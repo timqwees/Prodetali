@@ -1,0 +1,20 @@
+.tooltip-inner {
+  background-color: rgb(255,255,255);
+  color: black;
+  font-size: 12px;
+  padding:3.5px;
+  border-radius: 5px;
+  width: auto;
+  max-width: calc(250px + 30px);
+  font-family: "SB Sans Display";
+  word-break:break-word;
+  overflow: clip;
+  transition: all .35s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip.show .tooltip-inner {
+  opacity: 1;
+  visibility: visible;
+}

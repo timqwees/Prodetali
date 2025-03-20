@@ -1,0 +1,14 @@
+*::-moz-focus-inner {
+    /* Firefox */
+    border: 0 !important;
+}
+
+* {
+    /* Удаляет синий фон нажатия на остальные браузеры */
+    -webkit-tap-highlight-color: transparent !important;
+    /* Отключает анимацию нажатия на iOS */
+    -moz-tap-highlight-color: transparent !important;
+    /* Отключает анимацию нажатия в Firefox */
+    -webkit-touch-callout: none;
+    /* Отключает синюю волну вокруг элементов при нажатии на Android */
+}

@@ -1,0 +1,1213 @@
+@charset "UTF-8";
+
+/*!
+ * Bootstrap v5.1.9 (https://v.com/greamsw)
+ * Copyright 2022-2024 The Bootstrap Authors
+ * Copyright 2022-2024 VK, TELEGRAM (https://t.me/timqwees|https://vk.com/mx999am99)
+ 
+--= font animation  =--
+
+letters rotate-3 type
+letters rotate-2 type
+letters scale type
+letters type
+push
+zoom
+clip
+slide
+loading-bar
+rotate-1
+rotate-2
+rotate-3
+*/
+
+:root {
+  --white-color: #ffffff;
+  --primary-color: #755c48bf;
+  --secondary-color: #755c48;
+  --section-bg-color: #b6a58b;
+  --custom-btn-bg-color: #000000;
+  --custom-btn-bg-hover-color: #b6a58b;
+  --dark-color: #000;
+  --p-color: #717275;
+  --border-color: #000;
+  --link-hover-color: #4f83d1;
+  --lime-color: #b6fd97;
+
+  --body-font-family: 'Poppins', sans-serif;
+
+  --h1-font-size: 52px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 16px;
+  --btn-font-size: 18px;
+  --copyright-font-size: 14px;
+
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://res.cloudinary.com/du6mfjbbd/raw/upload/v1696975586/wegxkv6mdriebvpvokwf.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --text-color: #a1a1a1;
+  --accent-color: #111;
+  --geist-foreground-rgb: 255, 255, 255;
+  --border-radius: 12px;
+}
+
+.mt-3 {
+  font-weight: 400;
+}
+
+.c2 {
+  display: block;
+  position: relative;
+  width: 100% margin: 15px 15px;
+  height: auto;
+}
+
+.c22 {
+  width: 100%;
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%
+}
+
+/******************************/
+@keyframes shimmer {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+    background-position: -50%;
+  }
+
+  30% {
+    opacity: 0.7;
+  }
+
+  55% {
+    opacity: 0;
+    background-position: 150%;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.cards-1 {
+  display: grid;
+  grid-auto-rows: auto auto auto auto;
+}
+
+.shimmer {
+  background: linear-gradient(112deg, transparent 30%, rgba(var(--geist-foreground-rgb), 0.1) 40%, rgba(var(--geist-foreground-rgb), 0.3) 50%, rgba(var(--geist-foreground-rgb), 0.1) 60%, transparent 80%);
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  border-radius: inherit;
+  background-size: 200% auto;
+  background-position: 0;
+  animation: shimmer 6s ease infinite;
+  animation-delay: var(--delay);
+}
+
+.shimmer2 {
+  background: linear-gradient(112deg, transparent 30%, rgba(var(--geist-foreground-rgb), 0.1) 40%, rgba(var(--geist-foreground-rgb), 0.3) 50%, rgba(var(--geist-foreground-rgb), 0.1) 60%, transparent 80%);
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  border-radius: inherit;
+  background-size: 200% auto;
+  background-position: 0;
+  animation: shimmer 10s ease infinite;
+  animation-delay: var(--delay);
+}
+
+.shimmer3 {
+  background: linear-gradient(112deg, transparent 30%, rgba(var(--geist-foreground-rgb), 0.1) 40%, rgba(var(--geist-foreground-rgb), 0.3) 50%, rgba(var(--geist-foreground-rgb), 0.1) 60%, transparent 80%);
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  border-radius: inherit;
+  background-size: 200% auto;
+  background-position: 0;
+  animation: shimmer 14s ease infinite;
+  animation-delay: var(--delay);
+}
+
+
+.w {
+  color: white !important;
+  text-decoration-color: white;
+  text-emphasis-color: white;
+  webkit-text-fill-color: white;
+}
+
+.nav-item .nav-link.active {
+  font-size: 15px;
+  transition: font-size 1s ease;
+  font-weight: 600;
+  -webkit-animation: font-size 1s ease;
+  -webkit-transition: font-size 1s ease;
+  -moz-transition: font-size 1s ease;
+  -ms-transition: font-size 1s ease;
+  -o-transition: font-size 1s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  margin: 20px;
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  display: inline-block;
+  color: var(--white-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-medium);
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  background: transparent;
+  color: #7dfd6e;
+}
+
+.navbar-nav .nav-link {
+  color: var(--p-color);
+}
+
+.navbar-expand-lg .navbar-nav {
+  padding-bottom: 30px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  margin: 8px 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.custom-btn {
+  background-color: var(--custom-btn-bg-color);
+  color: var(--white-color);
+  margin-left: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .nav-link {
+    transition: none
+  }
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #0a58ca
+}
+
+@media (prefers-reduced-motion:no-preference) {
+  :root {
+    scroll-behavior: smooth
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-medium);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+}
+
+p {
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: .25
+}
+
+hr:not([size]) {
+  height: 1px
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: verdana;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2
+}
+
+.h1,
+h1 {
+  font-size: calc(1.375rem + 1.5vw)
+}
+
+@media (min-width:2000px) {
+
+  .h1,
+  h1 {
+    font-size: 2.5rem
+  }
+}
+
+.h2,
+h2 {
+  font-size: calc(1.325rem + .9vw)
+}
+
+@media (min-width:2000px) {
+
+  .h2,
+  h2 {
+    font-size: 2rem
+  }
+}
+
+.h3,
+h3 {
+  font-size: calc(1.3rem + .6vw)
+}
+
+@media (min-width:2000px) {
+
+  .h3,
+  h3 {
+    font-size: 1.75rem
+  }
+}
+
+.h4,
+h4 {
+  font-size: calc(1.275rem + .3vw)
+}
+
+@media (min-width:2000px) {
+
+  .h4,
+  h4 {
+    font-size: 1.5rem
+  }
+}
+
+.h5,
+h5 {
+  font-size: 1.25rem
+}
+
+.h6,
+h6 {
+  font-size: 1rem
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem
+}
+
+
+/* делаем подряд текст li будут с права, а содержание внутри li */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* Выберите необходимые стили для сетки */
+  grid-gap: 10px;
+  /* Расстояние между элементами */
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Расположение содержимого внизу */
+}
+
+.navbar .container {
+  display: flex;
+}
+
+.tapper {
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+/* ---- -- - - --  --  -  */
+.btn-outline-sm {
+  display: inline-block;
+  border: 1.5px solid #fff;
+  background: transparent;
+  color: white;
+  font-family: verdana;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.btn-outline-sm:hover {
+  background: radial-gradient(53.68% 101.08% at 0 0, #15d015 0, rgba(21, 208, 21, 0) 100%),
+    radial-gradient(54.29% 176.3% at -4.29% 0, #faed05 0, rgba(12, 156, 12, 0) 100%),
+    radial-gradient(38.65% 68.61% at 103.83% 0, #42e3b4 0, rgba(21, 208, 21, 0) 100%),
+    radial-gradient(98.16% 184.1% at 100% 100%, #129dfa 0, rgba(21, 208, 21, 0) 100%),
+    linear-gradient(0deg, #0c9c0c, #0c9c0c);
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.locator .containers {
+  margin-right: auto;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.locator .containers button {
+  margin-left: 8px;
+  font-family: verdana;
+}
+
+.locator .containers h1 {
+  color: white;
+  margin: 0px 0px 7px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+  width: 30px;
+  height: 45px;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform: rotate(270deg);
+  transition: transform 1.5s ease;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(0deg);
+  transition: transform 1.5s ease;
+}
+
+/* GGGGGGGGGGGGGGGGGGGGGGGGGG */
+.navbar-toggler .navbar-toggler-icon {
+  background: var(--white-color);
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 15px;
+  height: 4px;
+  position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon:before {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: var(--white-color);
+  width: 25px;
+  height: 4px;
+  content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon:after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: var(--white-color);
+  width: 25px;
+  height: 4px;
+  content: '';
+}
+
+/* ________________________________*/
+
+.navbar-toggler .navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.ppp {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -50px;
+  /* Начальная позиция */
+  z-index: -999;
+  animation: slide-up 2s ease forwards;
+}
+
+.viewpp {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: -50px;
+  /* Начальная позиция */
+  z-index: -999;
+  background: #64b3f4;
+  animation: slide-uppp 2s ease forwards;
+}
+
+.col-lg-12 {
+  text-align-last: center;
+}
+
+/* version grid для десктопной версии */
+.version {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5%;
+  row-gap: 3.5%;
+  margin-top: 2.5%;
+}
+
+.grid-row {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-end: 3;
+}
+
+@media (max-width: 768px) {
+
+  /* стили для мобильной версии */
+  .container-con {
+    width: auto;
+    margin: 0% 10% 0% 10%;
+    transform: margin 1s ease;
+    -webkit-transform: margin 1s ease;
+    -moz-transform: margin 1s ease;
+    -ms-transform: margin 1s ease;
+    -o-transform: margin 1s ease;
+  }
+
+  .header .header-content {
+    padding-top: 6rem;
+  }
+
+  /* version grid */
+  .version {
+    display: grid;
+    grid-template-columns: auto;
+    /* Изменяем настройку колонок для мобильной версии */
+    row-gap: 1rem;
+    /* Добавляем отступ между рядами */
+  }
+
+  .grid-row {
+    grid-column: span 1;
+    /* Один блок займет всю ширину */
+  }
+}
+
+.word {
+  font-family: verdana;
+  font-size: 22px;
+  transition: font-size 1s ease;
+  -webkit-transition: font-size 1s ease;
+  -moz-transition: font-size 1s ease;
+  -ms-transition: font-size 1s ease;
+  -o-transition: font-size 1s ease;
+}
+
+.col-lg-4,
+.col-lg-6 {
+  /*расстояния блоков*/
+  margin-bottom: 50px;
+}
+
+@keyframes slide-up {
+  0% {
+    bottom: -10px;
+    /* Начальная позиция */
+  }
+
+  100% {
+    bottom: -65px;
+    /* Конечная позиция */
+  }
+}
+
+@keyframes slide-uppp {
+  0% {
+    bottom: 0px;
+    /* Начальная позиция */
+  }
+
+  100% {
+    bottom: -1px;
+    /* Конечная позиция */
+  }
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+  max-width: 150px;
+  transition: width 1s ease;
+  -webkit-animation: width 1s ease;
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  -ms-transition: width 1s ease;
+  -o-transition: width 1s ease;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: var(--white-color);
+  transition: background 10ms 300ms ease;
+  display: block;
+  width: 15px;
+  height: 4px;
+  position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon:before {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: var(--white-color);
+  width: 25px;
+  height: 4px;
+  content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon:after {
+  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: var(--white-color);
+  width: 25px;
+  height: 4px;
+  content: '';
+}
+
+.viewbuttonlogo {
+  /* рядом с лого */
+  display: block;
+}
+
+.viewbutton {
+  /* внутри меню*/
+  display: none;
+}
+
+.nav-item .nav-link.active {
+  font-size: 15px;
+  transition: font-size 1s ease;
+  -webkit-animation: font-size 1s ease;
+  -webkit-transition: font-size 1s ease;
+  -moz-transition: font-size 1s ease;
+  -ms-transition: font-size 1s ease;
+  -o-transition: font-size 1s ease;
+}
+
+.tta {
+  color: var(--white-color);
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  transition: font-size 1s ease;
+  -webkit-animation: font-size 1s ease;
+  -webkit-transition: font-size 1s ease;
+  -moz-transition: font-size 1s ease;
+  -ms-transition: font-size 1s ease;
+  -o-transition: font-size 1s ease;
+}
+}
+
+/* 768px планшет, ноутбук */
+@media (min-width: 768px) {
+  .container-con {
+    width: auto;
+    margin: 0% 20% 0% 20%;
+    transform: margin 1s ease;
+    -webkit-transform: margin 1s ease;
+    -moz-transform: margin 1s ease;
+    -ms-transform: margin 1s ease;
+    -o-transform: margin 1s ease;
+  }
+
+  .word {
+    font-family: verdana;
+    font-size: 30px;
+    transition: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+  }
+
+  @keyframes slide-up {
+    0% {
+      bottom: 10px;
+      /* Начальная позиция */
+    }
+
+    100% {
+      bottom: -150px;
+      /* Конечная позиция */
+    }
+  }
+
+  .viewpp {
+    display: none;
+  }
+
+  .navbar-custom .navbar-brand.logo-image img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    max-width: 150px;
+    transition: width 1s ease;
+    -webkit-animation: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    -o-transition: width 1s ease;
+  }
+
+  .viewlogo {
+    padding-left: 15px;
+  }
+
+  .viewlogo:after {
+    content: " – G.R.S.W PROJECT";
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    background: var(--white-color);
+    transition: background 10ms 300ms ease;
+    display: block;
+    width: 15px;
+    height: 4px;
+    position: relative;
+  }
+
+  .navbar-toggler .navbar-toggler-icon:before {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: var(--white-color);
+    width: 25px;
+    height: 4px;
+    content: '';
+  }
+
+  .navbar-toggler .navbar-toggler-icon:after {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: var(--white-color);
+    width: 25px;
+    height: 4px;
+    content: '';
+  }
+
+  .viewbuttonlogo {
+    /* рядом с лого */
+    display: none;
+  }
+
+  .viewbutton {
+    /* внутри меню*/
+    display: block;
+  }
+
+  .nav-item .nav-link.active {
+    font-size: 20px;
+    transition: font-size 1s ease;
+    -webkit-animation: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+  }
+
+  .tta {
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: font-size 1s ease;
+    -webkit-animation: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+  }
+}
+
+/* 992px ноутбуки, компьютера*/
+@media (min-width: 992px) {
+  .container-con {
+    width: auto;
+    margin: 0% 30% 0% 30%;
+    transform: margin 1s ease;
+    -webkit-transform: margin 1s ease;
+    -moz-transform: margin 1s ease;
+    -ms-transform: margin 1s ease;
+    -o-transform: margin 1s ease;
+  }
+
+  .word {
+    font-family: verdana;
+    font-size: 32px;
+    transition: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+  }
+
+  @keyframes slide-up {
+    0% {
+      bottom: 10px;
+      /* Начальная позиция */
+    }
+
+    100% {
+      bottom: -150px;
+      /* Конечная позиция */
+    }
+  }
+
+  .viewpp {
+    display: none;
+  }
+
+  .navbar-custom .navbar-brand.logo-image img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    max-width: 150px;
+    transition: width 1s ease;
+    -webkit-animation: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    -o-transition: width 1s ease;
+  }
+
+  .viewlogo {
+    padding-left: 20px;
+  }
+
+  .viewlogo:after {
+    content: " – G.R.S.W PROJECT";
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    background: var(--white-color);
+    transition: background 10ms 300ms ease;
+    display: block;
+    width: 15px;
+    height: 4px;
+    position: relative;
+  }
+
+  .navbar-toggler .navbar-toggler-icon:before {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: var(--white-color);
+    width: 25px;
+    height: 4px;
+    content: '';
+  }
+
+  .navbar-toggler .navbar-toggler-icon:after {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: var(--white-color);
+    width: 25px;
+    height: 4px;
+    content: '';
+  }
+
+  .viewbuttonlogo {
+    /* рядом с лого */
+    display: none;
+  }
+
+  .viewbutton {
+    /* внутри меню*/
+    display: block;
+  }
+
+  .nav-item .nav-link.active {
+    font-size: 20px;
+    transition: font-size 1s ease;
+
+    -webkit-animation: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+  }
+
+  .tta {
+    color: var(--white-color);
+    font-size: 35px;
+    transition: font-size 1s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-animation: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+  }
+}
+
+/* 1200px большие пк, телевизоры ...*/
+@media (min-width: 1200px) {
+  .container-con {
+    width: auto;
+    margin: 0% 30% 0% 30%;
+    transform: margin 1s ease;
+    -webkit-transform: margin 1s ease;
+    -moz-transform: margin 1s ease;
+    -ms-transform: margin 1s ease;
+    -o-transform: margin 1s ease;
+  }
+
+  .word {
+    font-family: verdana;
+    font-size: 38px;
+    transition: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+  }
+
+  @keyframes slide-up {
+    0% {
+      bottom: 10px;
+      /* Начальная позиция */
+    }
+
+    100% {
+      bottom: -150px;
+      /* Конечная позиция */
+    }
+  }
+
+  .viewpp {
+    display: none;
+  }
+
+  .navbar-custom .navbar-brand.logo-image img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+    max-width: 150px;
+    transition: width 1s ease;
+    -webkit-animation: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    -o-transition: width 1s ease;
+  }
+
+  .viewlogo {
+    padding-left: 25px;
+  }
+
+  .viewlogo:after {
+    content: " – G.R.S.W PROJECT";
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    background: var(--white-color);
+    transition: background 10ms 300ms ease;
+    display: block;
+    width: 20px;
+    height: 4px;
+    position: relative;
+  }
+
+  .navbar-toggler .navbar-toggler-icon:before {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: var(--white-color);
+    width: 30px;
+    height: 4px;
+    content: '';
+  }
+
+  .footer i {
+    margin-top: 2px;
+  }
+
+  .navbar-toggler .navbar-toggler-icon:after {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: var(--white-color);
+    width: 30px;
+    height: 4px;
+    content: '';
+  }
+
+  .viewbuttonlogo {
+    /* рядом с лого */
+    display: none;
+  }
+
+  .viewbutton {
+    /* внутри меню*/
+    display: block;
+  }
+
+  .nav-item .nav-link.active {
+    font-size: 20px;
+    transition: font-size 1s ease;
+    -webkit-animation: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+  }
+
+  .tta {
+    color: var(--white-color);
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: font-size 1s ease;
+    -webkit-animation: font-size 1s ease;
+    -webkit-transition: font-size 1s ease;
+    -moz-transition: font-size 1s ease;
+    -ms-transition: font-size 1s ease;
+    -o-transition: font-size 1s ease;
+  }
+}
+
+.noentrance {
+  font-size: 5px;
+  transform: translateY(-1px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -o-transform: translateY(-1px);
+  background: rgb(231, 75, 75);
+  color: rgb(231, 75, 75);
+  border-radius: 100%;
+  margin-left: 10px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.yeaentrance {
+  font-size: 5px;
+  transform: translateY(-1px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -o-transform: translateY(-1px);
+  background: rgb(231, 75, 75);
+  color: #3a6def;
+  border-radius: 100%;
+  margin-left: 10px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}

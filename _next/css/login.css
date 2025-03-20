@@ -1,0 +1,119 @@
+@font-face {
+  font-family: SB Sans Display;
+  font-weight: 700;
+  font-style : normal;
+  src        : url(../_next/static/static/media/SBSansDisplay-Bold.ae716529.woff2) format("woff2"), url(../_next/static/static/media/SBSansDisplay-Bold.80399f64.woff) format("woff")
+}
+
+@font-face {
+  font-family: SB Sans Display;
+  font-weight: 600;
+  font-style : normal;
+  src        : url(../_next/static/static/media/SBSansDisplay-SemiBold.dc55716e.woff2) format("woff2"), url(../_next/static/static/media/SBSansDisplay-SemiBold.a9e7b9fe.woff) format("woff")
+}
+
+@font-face {
+  font-family: SB Sans Display;
+  font-weight: 400;
+  font-style : normal;
+  src        : url(../_next/static/static/media/SBSansDisplay-Regular.f8241673.woff2) format("woff2"), url(../_next/static/static/media/SBSansDisplay-Regular.e0a2fdc0.woff) format("woff")
+}
+
+@font-face {
+  font-family: CoFo Sans;
+  font-weight: 700;
+  font-style : normal;
+  src        : url(../_next/static/static/media/CoFoSans-Bold.96d558d3.woff) format("woff")
+}
+
+@font-face {
+  font-family: CoFo Sans;
+  font-weight: 600;
+  font-style : normal;
+  src        : url(../_next/static/static/media/CoFoSans-Medium.54378e96.woff) format("woff")
+}
+
+@font-face {
+  font-family: CoFo Sans;
+  font-weight: 400;
+  font-style : normal;
+  src        : url(../_next/static/static/media/CoFoSans-Regular.e55c51dd.woff) format("woff")
+}
+
+@font-face {
+  font-family: SB Spasibo Sans Display;
+  font-weight: 700;
+  font-style : normal;
+  src        : url(../_next/static/static/media/SBSpasiboSansDisplay-Bold.602600f5.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: SB Spasibo Sans Display;
+  font-weight: 600;
+  font-style : normal;
+  src        : url(../_next/static/static/media/SBSpasiboSansDisplay-SemiBold.312354c4.ttf) format("truetype")
+}
+
+@font-face {
+  font-family: SB Spasibo Sans Display;
+  font-weight: 400;
+  font-style : normal;
+  src        : url(../_next/static/static/media/SBSpasiboSansDisplay-Regular.ba2059d7.ttf) format("truetype")
+}
+
+    @media screen and (min-width: 768px){
+        .bx.bx-bell{
+    display: block;
+    transition: display 1s ease;
+}
+}
+    @media screen and (max-width: 768px){
+        .bx.bx-bell{
+    display: none;
+    transition: display 1s ease;
+}
+}
+@media (max-width: 768px) { /* стили для мобильной версии */
+  .m-nersisyan {
+    margin: 1rem !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+  .logo_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--blue-color);
+    margin-left: -15px;
+    transition: all 1s ease;
+  }
+  .navbar_content {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-left: auto;
+    transform: translateX(15px);
+    transition: all 1s ease;
+  }
+.bx.bx-bell{
+    display: none;
+    transition: display 1s ease;
+}
+.text {
+    font-size: 12px;
+    transition: all 1s ease;
+}
+.text input {
+    width: 13px;
+    height: 13px;
+    transform: translateY(0.8px);
+}
+  /* .label-control {
+	font-size: 13px;
+}*/
+}
