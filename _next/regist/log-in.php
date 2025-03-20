@@ -675,13 +675,14 @@ if (time() - $time_start > 5) {
                 style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/signin-ill.jpg');
           background-size: cover;">
                 <span class="mask bg-gradient-primary opacity-6"></span>
-                <h4 class="mt-5 text-white font-weight-bolder position-relative">PRO детали - ваш сервис по металлургии
+                <h4 class="mt-5 text-white font-weight-bolder position-relative">PRO детали - ваш сервис по
+                  Металлообработки
                   [TimQwees Technology]</h4>
                 <p class="text-white position-relative">
                   ©
                   <script async defer>
                     document.write(new Date().getFullYear())
-                  </script> Проект при поддержке TimQwees Technology 'платформа по Металлургии (сайт)'
+                  </script> Проект при поддержке TimQwees Technology 'платформа по Металлообработки (сайт)'
                 </p>
               </div>
             </div>
